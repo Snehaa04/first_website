@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    My first webpage
+        </title>
+        <meta name ="discription" content = "thus is the discription.">
+</head>
+    <body class = "body">
+
+       <header class = "main-header">
+          <nav class = "nav main-nav">
+            <ul>
+                <li><a href = "about.html">ABOUT ME</a></li>
+                <li><a href = "time_table.html">TIME TABLE</a></li>
+                <li>HOBBIES</li>
+                <li><a href = "index.html">CONTACT</a></li>
+                <li><a href = "links.html">PROJECTS</a></li>
+                
+            </ul>
+          </nav>
+        <!--THIS IS USED TO SHOW A HORIZONTAL STRAIGHT LINE I THE WEBPAGE.-->
+        
+        
+        
+        <!--comments: add some background to this index or HOME page.... JUST A REMINDER-->
+        
+        </header>
+        <h3>HEY NICE TO MEET YOU. THESE ARE MY HOBBIES.</h3>
+
+        <body style="text-align: center;">
+             <form class ="form">
+               CHOOSE THE HOBBIES YOU WANT TO KNOW ABOUT
+               <br>
+               <br>
+
+               <input type = "checkbox" name = "hobby1" id="C1" value = "Watching TV series">
+               WATCHING TV SERIES
+               <br>
+               <br>
+
+               <input type = "checkbox" name = "hobby2" id = "C2" value = "LISTENING TO SONGS">
+               LISTENING TO SONGS
+               <br>
+               <br>
+               <input type = "checkbox" name = "hobby3" id = "C3" value = "Watching movies">
+               WATCHING MOVIES
+               <br>
+               <br>
+                
+               <!-- <p id="text1" style = "display:none"> <h4>WATCHING TV SERIES:</h4>I like to watch TV series in my free time. They help me refresh. My favourites are The Office, Stranger Things.</p>
+               <p id="text2" style = "display:none"> <h4>LISTENING TO SONGS:</h4> Best recreational activity. I like to listen to songs while walking or exercising</p>
+               <p id="text3" style = "display:none"> <h4>WATCHING SERIES:</h4>I like to watch thriller and horror movies. I usually don't get enough time to watch a complete movie at a time, so this is a rare activity for me.</p> -->
+
+               
+               <input type = "button" class = "button" value = "Submit" onclick = "myFunction()"></button>
+
+               <p id="text1" style = "display:none"> WATCHING TV SERIES : I like to watch TV series in my free time. They help me refresh. My favourites are The Office, Stranger Things.</p>
+               <p id="text2" style = "display:none"> LISTENING TO SONGS : Best recreational activity. I like to listen to songs while walking or exercising</p>
+               <p id="text3" style = "display:none"> WATCHING MOVIES : I like to watch thriller and horror movies. I usually don't get enough time to watch a complete movie at a time, so this is a rare activity for me.</p>
+
+               <script type="text/javascript">
+                function myFunction(){
+                var C1 = document.getElementById("C1");
+                var C2 = document.getElementById("C2");
+                var C3 = document.getElementById("C3");
+                var text1 = document.getElementById("text1");
+                var text2 = document.getElementById("text2");
+                var text3 = document.getElementById("text3");
+                if(C1.checked == true){
+                  text1.style.display = "block";
+                }
+                if(C1.checked == false){
+                  text1.style.display = "none";
+                }
+
+                if(C2.checked == true){
+                  text2.style.display = "block";
+                }
+                if(C2.checked == false){
+                  text2.style.display = "none";
+                }
+
+                if(C3.checked == true){
+                  text3.style.display = "block";
+                }
+                if(C3.checked == false){
+                  text3.style.display = "none";
+                }
+              }
+              </script>
+              <footer class ="footer-about">
+                <footer style="img">
+                
+                <ul>
+                    <li><a href = "https://github.com/Snehaa04" target = "_blank"><img src ="github.png" width  = 50></a></li>
+                    <li><a href = "https://www.instagram.com/snehaa_.04/" target = "_blank"><img src ="insta_logo.jpg"  width = 50></a></li>
+                    <li><a href = "https://www.linkedin.com/in/snehaa-reddy-3b8043238/" target = "_blank"><img src = "linkedin_ogo.png" width = 50></a></li>
+                </ul>
+                
+            </footer>
+
+
+
+
+               <link rel = "stylesheet" href= "style.css"/>
+
+
+
+
+
+
+
+
+        </body>
+        </html>
